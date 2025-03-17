@@ -1,0 +1,12 @@
+<h1>Editing category</h1>#Main heading
+#Renders a partial form for editing category
+<%= render "form", category: @category %> 
+
+<br>
+
+<div>
+#Link to view details of the current category
+#Link to to return  back to te list of categories
+  <%= link_to "Show this category", @category %> |
+  <%= link_to "Back to categories", categories_path %>
+</div>

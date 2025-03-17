@@ -1,0 +1,27 @@
+<h1>Welcome to MyQuotesApp</h1> <%# Main heading welcoming users TO THE MYQUOTES APP%>
+<p>Where you can collect,share your favourite quotes and search those collected by others!</p>  <%#A little description of what the app does%>
+<h3>Recently Added Quotes</h3> <%# Displays recently added quotes%>
+
+<div class="quotes">
+  <% @quotes.each do |quote| %>
+    <div class="quote">
+    <%#Displays the quote text %>
+      <p><strong></strong> <%= quote.quote_text %></p>
+    <%# Display the author's first name, or "Unknown" if not available %>
+      <p><strong>Author:</strong>Author<%= quote.philosopher&.fname  || "Unknown" %></p>
+      <%#Display the name the user who collected the quote%>
+      <p><strong>Collected by:</strong> <%= quote.user.fname %></p>
+    <%# Displays the categories of the  quote that has been written down%>
+      <p><strong>Category:</strong> <%= quote.categories.map(&:catname).join(', ') %></p>
+    <%# Display the year the quote was published, or "N/A" if not stated %>
+      <p><strong>Date Published:</strong> <%= quote.quote_year || "N/A" %></p>
+    <%# Checks if there is a comment written dow for the quote %>
+    <%# Displays the resluts if a commment is present%>
+      <% if quote.quote_comment.present? %>
+        <p><strong>Comment:</strong> <%= quote.quote_comment %></p>
+      <% end %>
+    </div>
+    <hr>
+  <% end %>
+</div>
+

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quote_text: MyText
+  quote_year: MyString
+  quote_comment: MyText
+  ispublic: false
+  user: one
+  philosopher: one
+
+two:
+  quote_text: MyText
+  quote_year: MyString
+  quote_comment: MyText
+  ispublic: false
+  user: two
+  philosopher: two

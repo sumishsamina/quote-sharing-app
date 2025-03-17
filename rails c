@@ -1,0 +1,11 @@
+=> 
+[32m#<User:0x000071b02d2a9ff0[0m
+ id: [34m[1m2[0m,
+ fname: [31m[1m"[0m[31mJohn[0m[31m[1m"[0m,
+ lname: [31m[1m"[0m[31mJones[0m[31m[1m"[0m,
+ email: [31m[1m"[0m[31madmin@myquotes.com[0m[31m[1m"[0m,
+ password_digest: [31m[1m"[0m[31m[FILTERED][0m[31m[1m"[0m,
+ is_admin: [36m[1mfalse[0m,
+ status: [31m[1m"[0m[31mActive[0m[31m[1m"[0m,
+ created_at: Sun, 13 Oct 2024 11:28:38.122087000 UTC +00:00,
+ updated_at: Sun, 13 Oct 2024 11:28:38.122087000 UTC +00:00[32m>[0m

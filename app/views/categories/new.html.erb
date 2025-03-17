@@ -1,0 +1,10 @@
+<h1>New category</h1>#Mian heading
+#Render a partial form for creating a new category
+<%= render "form", category: @category %>
+
+<br>
+
+<div>
+#Link to return to the list of categories
+  <%= link_to "Back to categories", categories_path %>
+</div>
